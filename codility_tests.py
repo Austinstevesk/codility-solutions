@@ -71,6 +71,18 @@ def solution(riddle):
 solution("a?vcs?fga?")
 
 
+"""
+Counting the values iterated in a list A to get to a value greater
+than the mean of the values in the list A"""
+from statistics import mean
+def solution(A):
+	avg = mean(A)
+	count = 0 
+	for i in A:
+		while i < avg:
+			i = i+1
+			count = count + 1
+	return count
 
 
  #PostgreSQL
