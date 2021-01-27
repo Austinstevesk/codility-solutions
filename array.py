@@ -1,5 +1,5 @@
 """
-Function taking 2 arrays A and B, returns the minimal value occuring in both lists
+Function taking 2 arrays A and B, returns the minimal value occuring in both lists. If no such value, return -1
 """
 
 """def solution(A,B):
