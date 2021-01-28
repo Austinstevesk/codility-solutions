@@ -18,3 +18,8 @@ def solution(A):
 	perform = True
 	count = 0
 	while perform:
+		max_value_of_Array = max(A)
+		index_of_max = A.index(max_value_of_Array)
+		A[index_of_max] = max_value_of_Array/2
+		new_sum = sum(A)
+		count +=1
