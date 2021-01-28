@@ -23,3 +23,6 @@ def solution(A):
 		A[index_of_max] = max_value_of_Array/2
 		new_sum = sum(A)
 		count +=1
+		if new_sum <= half_sum_of_list:
+			perform = False
+	return count
