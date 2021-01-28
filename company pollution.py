@@ -27,3 +27,4 @@ def solution(A):
 			perform = False
 	print(count)
 	return count
+solution([10,4,6,8])
