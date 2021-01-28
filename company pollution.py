@@ -9,3 +9,12 @@ to decrease the total sum of pollution by at least half.
 Which given an array of integers A of length N, returns the minimum number of filters needed to reduce
 the total pollution by half
 """
+
+
+
+def solution(A):
+	sum_of_list = sum(A)
+	half_sum_of_list = sum_of_list/2
+	perform = True
+	count = 0
+	while perform:
