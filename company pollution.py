@@ -25,4 +25,5 @@ def solution(A):
 		count +=1
 		if new_sum <= half_sum_of_list:
 			perform = False
+	print(count)
 	return count
