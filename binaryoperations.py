@@ -40,3 +40,25 @@ def solution(S):
     return counter
     
 print(solution('011100'))
+
+
+
+
+
+"""An aray A consisting of N integers is given. A slice of that array is a pair of integers (P,Q) such that O<=P<=Q<N. A slice (P,Q) of
+array A is called non-negative if all the elements A[P], A[P+1]....A[Q-1], A[Q] are non negative. The sum of a slice (P,Q) of array A is the
+value A[P]+A[P+1]+...+A[Q-1]+A[Q]
+
+
+Write a function that given an array A consisting of of N integers, returns the maximum sum of any non negative slice of that array. The function
+should return -1 if there are no non-negative slices in the array"""
+def solution(A):
+    max_ending = max_slice = 0
+    max_A = max(A)
+    if max_A > 0:
+        for i in range(len(A)):
+            max_ending = max(0, max_ending + A[i])
+            max_slice = max(max_slice, max_ending)
+    else:
+        max_slice = max_A
+    return max_slice
